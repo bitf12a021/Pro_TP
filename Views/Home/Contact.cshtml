@@ -1,0 +1,119 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+  <!-- SUB BANNER -->
+<section class="section-sub-banner awe-parallax bg-9">
+    <div class="awe-overlay"></div>
+    <div class="sub-banner">
+        <div class="container">
+            <div class="text text-center">
+                <h2>CONTACT WITH ME</h2>
+                <p>Feeling curious? Feel free to contact us. </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- END / SUB BANNER -->
+
+
+ <!-- CONTACT -->
+<section class="section-contact">
+    <div class="container">
+        <div class="contact">
+            <div class="row">
+
+                <div class="col-md-6 col-lg-5">
+
+                    <div class="text">
+                        <h2>Contact</h2>
+                        <p>Here how you can contact us.</p>
+                        <ul>
+                            <li><i class="icon hillter-icon-location"></i> 6F First Floor, Saman Arcade Firdous Market, Gulberg 3 Lahore, Pakistan</li>
+                            <li><i class="icon hillter-icon-phone"></i> +92 42 35944700</li>
+                            <li><i class="icon fa fa-envelope-o"></i> trippakistan@gmail.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-location">
+                        <a class="btn-collapse" data-toggle="collapse" href="#location">OTHER LOCATION <span class="fa fa-angle-down"></span></a>
+                        <div class="collapse" id="location">
+                            <div class="location-group">
+                                <h6>NORTH AMERICA</h6>
+                                <span>Caribbean, French West Indies</span>
+
+                                <!-- ITEM -->
+                                <div class="location-item" data-location="39.0926986,-94.5747324">
+                                    <div class="img">
+                                        <img src="images/contact/img-1.jpg" alt="">
+                                        <i class="fa  fa-map-marker"></i>
+                                    </div>
+                                    <div class="text">
+                                        <address>PO Box 4077, 2584 St Martin, CEDEX, French West Indies</address>
+                                        <p>
+                                            Tel: 858 634 8975 <br>
+                                            Fax: +1 212 854 7039
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+                                <!-- ITEM -->
+                                <div class="location-item" data-location="39.0912284,-94.5743515">
+                                    <div class="img">
+                                        <img src="images/contact/img-2.jpg" alt="">
+                                        <i class="fa  fa-map-marker"></i>
+                                    </div>
+                                    <div class="text">
+                                        <address>PO Box 4077, 2584 St Martin, CEDEX, French West Indies</address>
+                                        <p>
+                                            Tel: 858 634 8975 <br>
+                                            Fax: +1 212 854 7039
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-lg-offset-1">
+                    <div class="contact-form">
+                        <form id="send-contact-form" action="send_mail_contact.php" method="post">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <input type="text" class="field-text" name="name" placeholder="Name">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="field-text" name="email" placeholder="Email">
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="text" class="field-text" name="subject" placeholder="Subject">
+                                </div>
+                                <div class="col-sm-12">
+                                    <textarea cols="30" rows="10" name="message" class="field-textarea" placeholder="Write what do you want"></textarea>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button type="submit" class="awe-btn awe-btn-13">SEND</button>
+                                </div>
+                            </div>
+                            <div id="contact-content"></div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END / CONTACT -->
+<!-- MAP -->
+<section class="section-map">
+    <div class="contact-map">
+        <div id="map" data-locations="31.502589, 74.349081" data-center="31.502589, 74.349081"></div>
+    </div>
+</section>
+<!-- END / MAP -->
