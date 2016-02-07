@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Transport | Trip Pakistan";
+}
+
+<!-- SUB BANNER -->
+<section class="section-sub-banner awe-parallax bg-transport-banner">
+    <div class="awe-overlay"></div>
+    <div class="sub-banner">
+        <div class="container">
+            <div class="text text-center">
+                <h2>Transport</h2>
+                <p>Providing the Best Means of Transport at Best Rates</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END / SUB BANNER -->
+<!-- GUEST BOOK -->
+<section class="section-guest-book">
+    <div class="container">
+        <div class="guest-book">
+
+            <!-- Transport BOOK MASONRY -->
+            <div class="guest-book_content">
+
+                <div class="row">
+                    <div class="guest-book_mansory">
+                        @for (int i = 0; i < 5; i++) {
+                        <!-- ITEM -->
+                            <div class="item-masonry col-xs-6 col-md-4 ">
+                                <div class="guest-book_item guest-book_item-2">
+                                    <div class="avatar">
+                                        <img src="~/assets/images/Transport/transport-temp-1.jpg" />
+                                    </div>
+                                    <h2>Mercedes Bens</h2>
+                                    <div class="hr"></div>
+                                    <p>Price <b>5,000 PKR</b>/ day</p>
+                                    <div class="hr"></div>
+                                    <span class="text-cn"><a href="#" class="awe-btn awe-btn-13">Book Now</a> </span>
+                                </div>
+                            </div>
+                        <!-- END / ITEM -->
+                        <!-- ITEM -->
+                            <div class="item-masonry col-xs-6 col-md-4">
+                                <div class="guest-book_item guest-book_item-2">
+                                    <div class="avatar">
+                                        <img src="~/assets/images/Transport/transport-temp-3.jpg" />
+                                    </div>
+                                    <h2>BMW 730D</h2>
+                                    <div class="hr"></div>
+                                    <p>Price <b>5,000 PKR</b>/ day</p>
+                                    <div class="hr"></div>
+                                    <span class="text-cn"><a href="#" class="awe-btn awe-btn-13">Book Now</a> </span>
+                                </div>
+                            </div>
+                        <!-- END / ITEM -->
+                        <!-- ITEM -->
+                            <div class="item-masonry col-xs-6 col-md-4">
+                                <div class="guest-book_item guest-book_item-2">
+                                    <div class="avatar">
+                                        <img src="~/assets/images/Transport/transport-temp-2.jpg" />
+                                    </div>
+                                    <h2>Mercedes 952RDX</h2>
+                                    <div class="hr"></div>
+                                    <p>Price <b>5,000 PKR</b>/ day</p>
+                                    <div class="hr"></div>
+                                    <span class="text-cn"><a href="#" class="awe-btn awe-btn-13">Book Now</a> </span>
+                                </div>
+                            </div>
+                        <!-- END / ITEM -->
+                        }
+                    </div>
+                </div>
+
+                <!-- PAGE NAVIGATION  
+                <ul class="page-navigation text-center">
+                    <li class="first"><a href="#"><i class="fa fa-arrow-left"></i></a></li>
+                    <li><a href="#">1</a></li>
+                    <li class="current-page"><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li class="last"><a href="#"><i class="fa fa-arrow-right"></i></a></li>
+                </ul>
+                <!-- END / PAGE NAVIGATION   -->
+
+            </div>
+            <!-- END / Transport BOOK MASONRY -->
+        </div>
+    </div>
+</section>
+<!-- END / Transport BOOK -->

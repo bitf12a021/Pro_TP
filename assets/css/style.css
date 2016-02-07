@@ -1029,6 +1029,9 @@ blockquote p:after {
 .bg-21 {
     background-image: url(../images/banner/img-21.jpg);
 }
+.bg-hotels {
+    background-image:url(../images/banner/bg-hotels.jpg);
+}
 #header {
     position: relative;
     z-index: 999;
@@ -4329,11 +4332,13 @@ blockquote p:after {
     bottom: 30px;
     left: 45px;
     right: 45px;
+    color:#fff;
     z-index: 1;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 .room_item-5 .room_item-forward h2 {
+        color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
@@ -4366,10 +4371,10 @@ blockquote p:after {
     -moz-transform: scale(.9);
     -ms-transform: scale(.9);
     -o-transform: scale(.9);
-    -webkit-transition: all .2s ease;
-    -moz-transition: all .2s ease;
-    -ms-transition: all .2s ease;
-    -o-transition: all .2s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 .calendar_custom .calendar_tabel td, .calendar_custom .calendar_title .calendar_corner, .room-compare_item .text h2 a, .room-detail_img .apb-zoom, .room-detail_tab-header li a:before, .room-detail_thumbs a:before, .room-package_item .text h4 a, .room_item-6 .text h2 a, .room_item-6:before {
     -webkit-transition: all .3s ease;
@@ -4391,7 +4396,7 @@ blockquote p:after {
     color: #898989;
     font-size: 15px;
     margin-bottom: 0;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .room_item-5 .room_item-back p b {
     color: #333;
@@ -5963,16 +5968,16 @@ blockquote p:after {
     margin-top: 0;
 }
 .guest-book_item .avatar {
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     overflow: hidden;
     position: relative;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%}
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%}
 .guest-book_item .avatar:before {
     border: 3px solid #e7c130;
     position: absolute;
@@ -5982,9 +5987,9 @@ blockquote p:after {
     bottom: 0;
     pointer-event: none;
     opacity: 0;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%}
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%}
 .comingsoon .widget_social .widget-social a, .login-register .text .account_form .account-desc a, .login-register .text .account_form .field-form .field-text, .login-register .text .account_form .field-form .view-pass {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
@@ -8916,4 +8921,13 @@ iframe[name='google_conversion_frame'] {
     font-size: 0 !important;
     margin-top: -13px;
     float: left;
+}
+.stars{
+    color:#f2ca27;
+}
+.price > .fa-map-marker{
+    color:#2980b9;
+}
+.bg-transport-banner{
+    background-image:url(../images/Transport/transport-temp-1.jpg);
 }

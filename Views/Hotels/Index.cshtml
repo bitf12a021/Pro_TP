@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Hotels | Trip Pakistan.";
+}
+<!-- SUB BANNER -->
+<section class="section-sub-banner awe-parallax bg-hotels">
+    <div class="awe-overlay"></div>
+    <div class="sub-banner">
+        <div class="container">
+            <div class="text text-center">
+                <h2>Hotels &amp; RATES</h2>
+                <p>The Best Hotels With Best Rates Offered!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END / SUB BANNER -->
+<!-- ROOM -->
+<section class="section-room bg-white">
+    <div class="container">
+
+        <div class="room-wrap-5">
+            <div class="row">
+
+                <!-- ITEM -->
+                @for (int i = 0; i < 6; i++) {
+                    <div class="col-xs-6">
+                        <a href="#">
+                            <div class="room_item-5" data-background='/assets/images/Hotels/hotel-temp.jpg'>
+
+                                <div class="img">
+                                    <img src="/assets/images/Hotels/hotel-temp.jpg" />
+                                </div>
+
+                                <div class="room_item-forward">
+                                    <h2>Lahore Continental Hotel</h2>
+                                    <span class="price">Start form 6,090 PKR per day</span>
+                                    <span class="price"><i class="fa fa-map-marker fa-2x"></i> Lahore, Pakistan</span>
+                                    <p class="stars"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i></p>
+                                    <span class="price"></span>
+                                </div>
+
+                                <div class="room_item-back">
+                                    <h3>Lahore Continental Hotel</h3>
+                                    <span class="price">Start form 6,090 PKR per day</span>
+                                    <p><i class="fa fa-map-marker"></i> 70-71 Cavalry Ground, Commercial Area, Near Jinnah Flyover, Lahore, Pakistan</p>
+                                    <p>Rooms are affordable in the Lahore Continental hotel rates list and are fully air-conditioned and fitted with en suite bathrooms, ornate lampshades, wall art and chairs or sofas. The 3 well-furnished suites also have a separate living area.</p>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="/hotels/hoteldetails" class="awe-btn awe-btn-13">VIEW DETAILS</a>
+
+                    </div>
+                    <!-- END / ITEM -->
+                }
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- END / ROOM -->

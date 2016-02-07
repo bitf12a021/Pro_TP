@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Home | Trip Pakistan";
 }
 
   <!-- BANNER SLIDER -->
@@ -41,6 +41,9 @@
 
 </section>
 <!-- END / BANNER SLIDER -->
+
+
+
 <!-- CHECK AVAILABILITY -->
 <section class="section-check-availability">
     <div class="container">
@@ -79,22 +82,64 @@
 </section>
 <!-- END / CHECK AVAILABILITY -->
 
- <!-- ABOUT -->
+    <!-- ACCOMMODATIONS -->
+<section class="section-accommo_1 bg-white">
+    <div class="container">
+
+        <div class="accomd-modations_1">
+
+            <h2 class="heading">Best Packages</h2>
+
+            <div class="accomd-modations-content_1">
+
+                <div class="accomd-modations-slide_1">
+                    @for (int i = 0; i < 5; i++) { 
+                    <!-- ITEM -->
+                    <div class="accomd-modations-room_1">
+                        
+                        <div class="img">
+                            <a href="#"><img src="~/assets/images/about/Pakistan-Monument.jpg" /></a>
+                        </div>
+
+                        <div class="text">
+                            <h2><a href="#">Walled City Of Lahore</a></h2>
+                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. estibulum nec semper lectus. Suspendisse placerat enim mauris, eget lobortis nisi egestas et. Donec elementum metus et mi aliquam eleifend....</p>
+                            <p class="price">
+                                <span class="amout">3,200</span> /day
+                            </p>
+                            <a href="#" class="awe-btn awe-btn-default">VIEW DETAIL</a>
+                        </div>
+
+                    </div>
+                    <!-- END / ITEM -->
+                    }
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ACCOMMODATIONS -->
+
+   <!-- ABOUT -->
 <section class="section-home-about bg-white">
     <div class="container">
         <div class="home-about">
             <div class="row">
                 <div class="col-md-6">
                     <div class="img">
-                        <a href="#"><img src="/assets/images/img-1(1).jpg" alt=""></a>
+                        <img src="/assets/images/img-1(1).jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="text">
                         <h2 class="heading">ABOUT US</h2>
-                        <span>Lorem Ipsum is simply dummy text</span>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source</p>
-                        <a href="#" class="awe-btn awe-btn-default">READ MORE</a>
+                        <span>Trip Pakistan newly established Travel and Tourism Company based in Lahore. We are offering travel services within Pakistan to eXplore Pakistan</span>
+                        <p>Providing all kind of Travel Services, i.e. Domestic ticketing,Hotel Booking in all Cities of Pakistan from South to North of Pakistan. Pick and Drop from airports to Hotels and back to Airport in all cities of Pakistan. Sightseeing in all Cities with pick and drop facilities. </p>
+                        <a href="/home/about" class="awe-btn awe-btn-default">READ MORE</a>
                     </div>
                 </div>
             </div>
@@ -103,70 +148,7 @@
 </section>
 <!-- END / ABOUT -->
 
-    <!-- ACCOMD ODATIONS -->
-<section class="section-accomd awe-parallax bg-lg-5">
-    <div class="awe-overlay"></div>
 
-    <div class="container">
-        <div class="accomd-modations">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="accomd-modations-header">
-                        <h2 class="heading">New Trips</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing</p>
-                    </div>
-                </div>
-                <div class="col-md-8 col-md-offset-1">
-                    <div class="accomd-modations-content owl-single">
-
-                        <div class="row">
-                            @for (int i = 0; i < 4; i++) {
-                                <div class="col-xs-6">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
-                                        </div>
-                                        <div class="text">
-                                            <h2><a href="#">Islamabad</a></h2>
-                                            <p class="price">
-                                                <span class="amout">$320</span>/days
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            }
-                            <!-- ITEM -->
-                          
-                        </div>
-
-                        <div class="row">
-                            @for (int i = 0; i < 4; i++) {
-                                <div class="col-xs-6">
-                                    <div class="accomd-modations-room">
-                                        <div class="img">
-                                            <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
-                                        </div>
-                                        <div class="text">
-                                            <h2><a href="#">Islamabad</a></h2>
-                                            <p class="price">
-                                                <span class="amout">$320</span>/days
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            }
-                            <!-- ITEM -->
-                       
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-<!-- END / ACCOMD ODATIONS -->
 
 <!-- HOME NEW -->
 <section class="section-event-news bg-white">
@@ -178,8 +160,8 @@
                 <!-- EVENT -->
                 <div class="col-md-6">
                     <div class="event">
-                        <h2 class="heading">EVENT &amp; DEAL</h2>
-                        <p>Lorem Ipsum is simply dummy text</p>
+                        <h2 class="heading">Tours &amp; Packages</h2>
+                        <p>Best tour packages for best travellers.</p>
 
                         <div class="row">
 
@@ -249,8 +231,8 @@
                 <!-- NEWS -->
                 <div class="col-md-6">
                     <div class="news">
-                        <h2 class="heading">NEWS</h2>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <h2 class="heading">Special</h2>
+                        <p>Specail Featured Packages This Month</p>
 
                         <div class="row">
 
@@ -263,7 +245,7 @@
                                     <div class="text">
                                         <span class="date">21 / March</span>
                                         <h2><a href="#">UPDATE MENU FOOD IN HOTEL</a></h2>
-                                        <a href="" class="read-more">[ Read More ]</a>
+                                        <a href="#" class="read-more">[ Read More ]</a>
                                     </div>
                                 </div>
                             </div>
@@ -296,170 +278,91 @@
                                 </div>
                             </div>
                             <!-- END / ITEM -->
-
                         </div>
-
                         <a href="#" class="awe-btn awe-btn-default">VIEW MORE</a>
-
                     </div>
-
                 </div>
                 <!-- END / NEWS -->
-
             </div>
-
             <div class="hr"></div>
-
         </div>
-
     </div>
 </section>
 <!-- END / HOME NEW -->
-<!-- GALLERY -->
-<section class="section-gallery bg-white">
-
-    <div class="gallery  no-padding">
-        <h2 class="heading text-center">Best Places</h2>
-
-        <!-- FILTER -->
-        <div class="gallery-cat text-center">
-            <ul class="list-inline">
-                <li class="active"><a href="#" data-filter="*">All</a></li>
-                <li><a href="#" data-filter=".ground">Lahore</a></li>
-                <li><a href="#" data-filter=".suite"> Karachi </a></li>
-                <li><a href="#" data-filter=".bathroom">Islamabad</a></li>
-                <li><a href="#" data-filter=".dining">KPK</a></li>
-            </ul>
-        </div>
-        <!-- END / FILTER -->
-        <!-- GALLERY CONTENT -->
-        <div class="gallery-content">
-            <div class="row">
-                <div class="gallery-isotope col-6 pd-0">
-
-                    <!-- ITEM SIZE -->
-                    <div class="item-size"></div>
-                    <!-- END / ITEM SIZE -->
-                    <!-- ITEM -->
-
-                    <div class="item-isotope suite dining ">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500/" alt="">
-                            </a>
+    <!-- GALLERY -->
+<section class="section_page-gallery">
+    <div class="container">
+        <div class="gallery gallery-3">
+            <h2 class="text-center">Best Places</h2>
+            <!-- FILTER -->
+            <div class="gallery-cat text-center">
+                <ul class="list-inline">
+                    <li class="active"><a href="#" data-filter="*">All</a></li>
+                    <li><a href="#" data-filter=".ground">Gilgit Baltistan</a></li>
+                    <li><a href="#" data-filter=".suite">KPK</a></li>
+                    <li><a href="#" data-filter=".bathroom">Sindh</a></li>
+                    <li><a href="#" data-filter=".dining">Punjab</a></li>
+                    <li><a href="#" data-filter=".balochistan">Balochistan</a></li>
+                </ul>
+            </div>
+            <!-- END / FILTER -->
+            <!-- GALLERY CONTENT -->
+            <div class="gallery-content">
+                <div class="row">
+                    <div class="gallery-isotope col-4">
+                        <!-- ITEM SIZE -->
+                        <div class="item-size"></div>
+                        <!-- END / ITEM SIZE -->              
+                        <!-- ITEM -->
+                        <div class="item-isotope larger suite bathroom dining">
+                            <div class="gallery_item">
+                                <a href="#">
+                                    <img src="/assets/images/Places/img-1.jpg" alt="">
+                                </a>
+                            </div>
+                       </div>                  
+                        <!-- END / ITEM -->
+                        <!-- ITEM -->
+                        <div class="item-isotope ground bathroom dining">
+                            <div class="gallery_item">
+                                <a href="#" class="mfp-image">
+                                    <img src="/assets/images/Places/img-2.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope  ground bathroom suite">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500/" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500/" alt="">
-                            </a>
+                        <!-- END / ITEM -->
+                        <!-- ITEM -->
+                        <div class="item-isotope ground suite dining">
+                            <div class="gallery_item">
+                                <a href="#" class="mfp-image">
+                                    <img src="/assets/images/Places/img-3.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope ground bathroom dining">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500/" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500/" alt="">
-                            </a>
+                        <!-- END / ITEM -->
+                        <!-- ITEM -->
+                        <div class="item-isotope ground suite bathroom">
+                            <div class="gallery_item">
+                                <a href="#" class="mfp-image">
+                                    <img src="/assets/images/Places/img-4.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope suite dining">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500/" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500/" alt="">
-                            </a>
+                        <!-- END / ITEM -->
+                        <!-- ITEM -->
+                        <div class="item-isotope suite bathroom dining">
+                            <div class="gallery_item">
+                                <a href="#" class="mfp-image">
+                                    <img src="/assets/images/Places/img-5.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
+                        <!-- END / ITEM -->
                     </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope  ground suite dining">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500/" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500/" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope ground bathroom dining">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500/" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope ground suite dining">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope bathroom suite dining">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope bathroom suite dining">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope ground bathroom">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope ground bathroom suite ">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500/img-1.jpg" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-                    <!-- ITEM -->
-                    <div class="item-isotope ground bathroom">
-                        <div class="gallery_item">
-                            <a href="https://placehold.it/500x500" class="gallery-popup mfp-image" title="Luxury Room view all">
-                                <img src="https://placehold.it/500x500" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END / ITEM -->
-
                 </div>
             </div>
-
-            <div class="our-gallery text-center">
-                <a href="#" class="awe-btn awe-btn-default">BROWSE OUR GALLERY</a>
-            </div>
-
+            <!-- GALLERY CONTENT -->
         </div>
-        <!-- GALLERY CONTENT -->
-
     </div>
 </section>
 <!-- END / GALLERY -->

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 
-    <!-- GOOGLE FONT -->
+    <!-- GOOGLE FONT //-->
     <link href='http://fonts.googleapis.com/css?family=Hind:400,300,500,600%7cMontserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- CSS LIBRARY -->
+    <!-- CSS LIBRARY //-->
     <link href="~/assets/css/lib/font-awesome.min.css" rel="stylesheet" />
     <link href="~/assets/css/lib/font-hilltericon.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="~/assets/css/lib/bootstrap.min.css">
@@ -18,24 +18,24 @@
     <link rel="stylesheet" type="text/css" href="~/assets/css/lib/settings.css">
     <link rel="stylesheet" type="text/css" href="~/assets/css/lib/bootstrap-select.min.css">
 
-    <!-- MAIN STYLE -->
+    <!-- MAIN STYLE //-->
     <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
 
 
 </head>
 <body>
-    <!-- PRELOADER -->
+    <!-- PRELOADER //-->
     <div id="preloader" style="display:none;">
         <span class="preloader-dot"></span>
     </div>
-    <!-- END / PRELOADER -->
-    <!-- PAGE WRAP -->
+    <!-- END / PRELOADER //-->
+    <!-- PAGE WRAP //-->
     <div id="page-wrap">
 
-        <!-- HEADER -->
+        <!-- HEADER //-->
         <header id="header">
 
-            <!-- HEADER TOP -->
+            <!-- HEADER TOP //-->
             <div class="header_top">
                 <div class="container">
                     <div class="header_left float-left">
@@ -49,12 +49,13 @@
                             <a href="/accounts/login">Login</a>
                             <a href="/accounts/signup">register</a>
                         </span>
+                        <!--
+                            <div class="dropdown currency">
+                            <span>PKR</span>
+                                <ul>
+                                    <li class="active"><a href="#">PKR</a></li>
+                                </ul>
 
-                        <div class="dropdown currency">
-                            <span>USD <i class="fa fa"></i></span>
-                            <ul>
-                                <li class="active"><a href="#">PKR</a></li>
-                            </ul>
                         </div>
 
                         <div class="dropdown language">
@@ -62,34 +63,34 @@
 
                             <ul>
                                 <li class="active"><a href="#">ENG</a></li>
-                                <!-- <li><a href="#">FR</a></li>-->
+                                <li><a href="#">FR</a></li>
                             </ul>
                         </div>
-
+                       -->
                     </div>
                 </div>
             </div>
-            <!-- END / HEADER TOP -->
-            <!-- HEADER LOGO & MENU -->
+            <!-- END / HEADER TOP //-->
+            <!-- HEADER LOGO & MENU //-->
             <div class="header_content" id="header_content">
 
                 <div class="container">
-                    <!-- HEADER LOGO -->
+                    <!-- HEADER LOGO //-->
                     <div class="header_logo">
                         <a href="#"><img src="~/assets/images/default/logo-small.png" alt="Header Logo" /></a>
                     </div>
-                    <!-- END / HEADER LOGO -->
-                    <!-- HEADER MENU -->
+                    <!-- END / HEADER LOGO //-->
+                    <!-- HEADER MENU //-->
                     <nav class="header_menu">
                         <ul class="menu">
                             <li class="current-menu-item">
                                 <a href="/home/index">Home</a>
-                                
+
                             </li>
                             <li><a href="/home/about">About</a></li>
 
                             <li>
-                                <a href="#">Services <span class="fa fa-caret-down"></span></a>
+                                <a href="#">Services <!--<span class="fa fa-caret-down"></span>//--></a>
                                 <ul class="sub-menu">
                                     <li><a href="#">Service 1</a></li>
                                     <!--  <li><a href="room-2.html">Room 2</a></li>
@@ -98,21 +99,21 @@
                                          <li><a href="room-5.html">Room 5</a></li>
                                          <li><a href="room-6.html">Room 6</a></li>
                                          <li><a href="room-detail.html">Room Detail</a></li>
-                                    -->
+                                    //-->
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Tours/ Packages <span class="fa fa-caret-down"></span></a>
+                                <a href="/packages">Tours/ Packages<!--<span class="fa fa-caret-down"></span>//--></a>
                                 <!--   <ul class="sub-menu">
                                        <li><a href="restaurants-1.html">Restaurant 1</a></li>
                                        <li><a href="restaurants-2.html">Restaurant 2</a></li>
                                        <li><a href="restaurants-3.html">Restaurant 3</a></li>
                                        <li><a href="restaurants-4.html">Restaurant 4</a></li>
                                    </ul>
-                                    -->
+                                    //-->
                             </li>
                             <li>
-                                <a href="#">Hotels <span class="fa fa-caret-down"></span></a>
+                                <a href="/hotels/index">Hotels <!--<span class="fa fa-caret-down"></span>//--></a>
                                 <!-- <ul class="sub-menu">
                                      <li><a href="reservation-step-1.html">Reservation Step 1</a></li>
                                      <li><a href="reservation-step-2.html">Reservation Step 2</a></li>
@@ -120,49 +121,49 @@
                                      <li><a href="reservation-step-4.html">Reservation Step 4</a></li>
                                      <li><a href="reservation-step-5.html">Reservation Step 5</a></li>
                                  </ul>
-                                    -->
+                                    //-->
                             </li>
                             <li>
-                                <a href="#">Transportation <span class="fa fa-caret-down"></span></a>
-                               <!-- <ul class="sub-menu">
-                                    <li>
-                                        <a href="#">Guest Book <span class="fa fa-caret-right"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="guest-book.html">Guest Book 1</a></li>
-                                            <li><a href="guest-book-2.html">Guest Book 2</a></li>
-                                        </ul>
-                                    </li>
+                                <a href="/transport/index">Transportation </a>
+                                <!-- <ul class="sub-menu">
+                                     <li>
+                                         <a href="#">Guest Book <span class="fa fa-caret-right"></span></a>
+                                         <ul class="sub-menu">
+                                             <li><a href="guest-book.html">Guest Book 1</a></li>
+                                             <li><a href="guest-book-2.html">Guest Book 2</a></li>
+                                         </ul>
+                                     </li>
 
-                                    <li>
-                                        <a href="#">Event <span class="fa fa-caret-right"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="events.html">Events</a></li>
-                                            <li><a href="events-fullwidth.html">Events Fullwidth</a></li>
-                                            <li><a href="events-detail.html">Events Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="attractions.html">Attractions</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Term Condition <span class="fa fa-caret-right"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="term-condition.html">Term Condition 1</a></li>
-                                            <li><a href="term-condition-2.html">Term Condition 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="">Activiti <span class="fa fa-caret-down"></span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="activiti.html">Activiti</a></li>
-                                            <li><a href="activiti-detail.html">Activiti Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="check-out.html">Check Out</a></li>
-                                    <li><a href="shortcode.html">ShortCode</a></li>
-                                    <li><a href="page-404.html">404 Page</a></li>
-                                    <li><a href="comingsoon.html">Comming Soon</a></li>
-                                </ul> -->
+                                     <li>
+                                         <a href="#">Event <span class="fa fa-caret-right"></span></a>
+                                         <ul class="sub-menu">
+                                             <li><a href="events.html">Events</a></li>
+                                             <li><a href="events-fullwidth.html">Events Fullwidth</a></li>
+                                             <li><a href="events-detail.html">Events Detail</a></li>
+                                         </ul>
+                                     </li>
+                                     <li>
+                                         <a href="attractions.html">Attractions</a>
+                                     </li>
+                                     <li>
+                                         <a href="#">Term Condition <span class="fa fa-caret-right"></span></a>
+                                         <ul class="sub-menu">
+                                             <li><a href="term-condition.html">Term Condition 1</a></li>
+                                             <li><a href="term-condition-2.html">Term Condition 2</a></li>
+                                         </ul>
+                                     </li>
+                                     <li>
+                                         <a href="">Activiti <span class="fa fa-caret-down"></span></a>
+                                         <ul class="sub-menu">
+                                             <li><a href="activiti.html">Activiti</a></li>
+                                             <li><a href="activiti-detail.html">Activiti Detail</a></li>
+                                         </ul>
+                                     </li>
+                                     <li><a href="check-out.html">Check Out</a></li>
+                                     <li><a href="shortcode.html">ShortCode</a></li>
+                                     <li><a href="page-404.html">404 Page</a></li>
+                                     <li><a href="comingsoon.html">Comming Soon</a></li>
+                                 </ul> //-->
                             </li>
                             <li>
                                 <a href="#">Cities <span class="fa fa-caret-down"></span></a>
@@ -176,30 +177,30 @@
                             <li><a href="/home/contact">Contact</a></li>
                         </ul>
                     </nav>
-                    <!-- END / HEADER MENU -->
-                    <!-- MENU BAR -->
+                    <!-- END / HEADER MENU //-->
+                    <!-- MENU BAR //-->
                     <span class="menu-bars">
                         <span></span>
                     </span>
-                    <!-- END / MENU BAR -->
+                    <!-- END / MENU BAR //-->
 
                 </div>
             </div>
-            <!-- END / HEADER LOGO & MENU -->
+            <!-- END / HEADER LOGO & MENU //-->
 
         </header>
-        <!-- END / HEADER -->
+        <!-- END / HEADER //-->
         @RenderBody()
 
-        <!-- FOOTER -->
+        <!-- FOOTER //-->
         <footer id="footer">
 
-            <!-- FOOTER TOP -->
+            <!-- FOOTER TOP //-->
             <div class="footer_top">
                 <div class="container">
                     <div class="row">
 
-                        <!-- WIDGET MAILCHIMP -->
+                        <!-- WIDGET MAILCHIMP //-->
                         <div class="col-lg-8">
                             <div class="mailchimp">
                                 <h4>News &amp; Offers</h4>
@@ -211,8 +212,8 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END / WIDGET MAILCHIMP -->
-                        <!-- WIDGET SOCIAL -->
+                        <!-- END / WIDGET MAILCHIMP //-->
+                        <!-- WIDGET SOCIAL //-->
                         <div class="col-lg-3 col-lg-offset-1">
                             <div class="social">
                                 <div class="social-content">
@@ -224,13 +225,13 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END / WIDGET SOCIAL -->
+                        <!-- END / WIDGET SOCIAL //-->
 
                     </div>
                 </div>
             </div>
-            <!-- END / FOOTER TOP -->
-            <!-- FOOTER CENTER -->
+            <!-- END / FOOTER TOP //-->
+            <!-- FOOTER CENTER //-->
             <div class="footer_center">
                 <div class="container">
                     <div class="row">
@@ -293,21 +294,21 @@
                     </div>
                 </div>
             </div>
-            <!-- END / FOOTER CENTER -->
-            <!-- FOOTER BOTTOM -->
+            <!-- END / FOOTER CENTER //-->
+            <!-- FOOTER BOTTOM //-->
             <div class="footer_bottom">
                 <div class="container">
                     <p>&copy; 2015 TripPakistan | All rights reserved.</p>
                 </div>
             </div>
-            <!-- END / FOOTER BOTTOM -->
+            <!-- END / FOOTER BOTTOM //-->
 
         </footer>
-        <!-- END / FOOTER -->
+        <!-- END / FOOTER //-->
 
     </div>
-    <!-- END / PAGE WRAP -->
-    <!-- LOAD JQUERY -->
+    <!-- END / PAGE WRAP //-->
+    <!-- LOAD JQUERY //-->
     <script src="~/assets/js/lib/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="~/assets/js/lib/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="~/assets/js/lib/jquery-ui.min.js"></script>
@@ -324,10 +325,10 @@
     <script type="text/javascript" src="~/assets/js/lib/jquery.parallax-1.1.3.js"></script>
     <script type="text/javascript" src="~/assets/js/lib/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="~/assets/js/lib/SmoothScroll.js"></script>
-    <!-- validate -->
+    <!-- validate //-->
     <script type="text/javascript" src="~/assets/js/lib/jquery.form.min.js"></script>
     <script type="text/javascript" src="~/assets/js/lib/jquery.validate.min.js"></script>
-    <!-- Custom jQuery -->
+    <!-- Custom jQuery //-->
     <script type="text/javascript" src="~/assets/js/scripts.js"></script>
 
 </body>

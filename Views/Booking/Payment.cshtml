@@ -1,0 +1,575 @@
+﻿@{
+    ViewBag.Title = "Payment";
+}
+
+<!-- SUB BANNER -->
+<section class="section-sub-banner awe-parallax bg-lg-4">
+
+    <div class="awe-overlay"></div>
+
+    <div class="sub-banner">
+        <div class="container">
+            <div class="text text-center">
+                <h2>Payment</h2>
+                <p>Please Select Your Payment Method And Enter Your Credentials</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- END / SUB BANNER -->
+<section class="section-reservation-page bg-white">
+
+    <div class="container">
+        <div class="reservation-page">
+
+            <!-- STEP -->
+            <div class="reservation_step">
+                <ul>
+                    <li><a href="#"><span>1.</span>  Select</a></li>
+                    <li><a href="/booking/chooseDate"><span>2.</span> Choose Data</a></li>
+                    <li><a href="/booking/CustomerInfo"><span>3.</span> Make a Reservation</a></li>
+                    <li class="active"><a href="/booking/payment"><span>4.</span> Confirmation</a></li>
+                </ul>
+            </div>
+            <!-- END / STEP -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="room-detail_tab">
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <ul class="room-detail_tab-header">
+                                    <li class="active"><a href="#amenities" data-toggle="tab">UBL OMNI</a></li>
+                                    <li><a href="#overview" data-toggle="tab">Net Banking</a></li>
+                                    <li><a href="#package" data-toggle="tab">EASY PAISA</a></li>
+                                    <li><a href="#rates" data-toggle="tab">TIME PEY</a></li>
+                                    @*<li><a href="#calendar" data-toggle="tab">Calendar</a></li>*@
+                                </ul>
+                            </div>
+
+                            <div class="col-md-9">
+                                <div class="room-detail_tab-content tab-content">
+
+                                    <!-- OVERVIEW -->
+                                    <div class="tab-pane fade" id="overview">
+
+                                        <section id="description" class="tab-content">
+                                            <article>
+                                                <h1>Pay using Net Banking</h1>
+                                                <div class="text-wrap">
+                                                    <ul>
+                                                        <li>
+                                                            Login to your UBL Net banking and opt for transfer funds tab in UBL Net banking.
+                                                        </li>
+                                                        <li>Check UBL Omni tab and enter Tourplanner.pk mobile account 0345 123456.</li>
+                                                        <li>Enter the required amount, submit and get your transaction ID </li>
+                                                        <li>
+                                                            Login to your Tourplanner.pk account and submit this transaction ID into your account.
+                                                            Tourplanner.pk will get back to you with an email
+                                                        </li>
+                                                    </ul>
+                                                    <table class="table table-striped">
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 20%; padding-top: 5px;">
+                                                                Choose your bank
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 80%; padding-top: 5px;">
+                                                                <select name="bankddl" class="form-control">
+                                                                    <option>UNITED BANK LIMITED</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 20%; padding-top: 5px;">
+                                                                Reference#
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 80%; padding-top: 5px;">
+                                                                <input id="bankrefid" class="form-control" name="bankrefid" type="text" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 20%; padding-top: 5px;"></td>
+                                                            <td align="left" valign="top" style="width: 80%; padding-top: 5px;">
+                                                                <button name="button" class="awe-btn awe-btn-13" value="2">
+                                                                    Make payment
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </article>
+                                        </section>
+                                        <!--//description-->
+
+
+                                    </div>
+                                    <!-- END / OVERVIEW -->
+                                    <!-- AMENITIES -->
+                                    <div class="tab-pane fade active in" id="amenities">
+
+                                        <!--facilities-->
+                                        <section id="facilities" class="tab-content">
+                                            <article>
+                                                <h1>UBL Omni</h1>
+                                                <div class="text-wrap">
+                                                    <table class="table table-striped" cellpadding="4" style="width: 100%;">
+                                                        <tr>
+                                                            <td align="left" valign="top" colspan="2">
+                                                                <strong>Branchless banking through UBL Omni </strong>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" colspan="2">
+                                                                <ul>
+                                                                    <li>
+                                                                        Visit any UBL Omni shop/ UBL branch/ UBL ATM machine (incase of ATM, just follow
+                                                                        the step for UBL omni) with original CNIC and photocopy
+                                                                    </li>
+                                                                    <li>
+                                                                        Ask the retailer/ branch cashier to send the money to Tourplanner.pk’s UBL Omni
+                                                                        mobile account# 0345 123456 UBL Omni retailer/ Branch representative will enter
+                                                                        the following: • Your CNIC • Amount • Your mobile number • Reference e.g Oder ID
+                                                                    </li>
+                                                                    <li>Pay the required amount + Fee to the retailer.</li>
+                                                                    <li>
+                                                                        You will receive an SMS confirmation which will contain your unique transaction
+                                                                        ID. (Do not share that ID with the retailer)
+                                                                    </li>
+                                                                    <li>
+                                                                        Login to your Tourplanner.pk account and submit this transaction ID into your
+                                                                        account. Tourplanner.pk will get back to you with an email
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 10%; padding-top: 10px;">
+                                                                <b>Account#</b>
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 10px;">
+                                                                0345 1234556
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 10%; padding-top: 10px;">
+                                                                <b>Transaction#</b>
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 10px;">
+                                                                <input class="form-control" id="ublomniref" name="ublomniref" type="text" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right" valign="top" style="width: 10%; padding-top: 10px;"></td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 10px;">
+                                                                <button name="button" class="awe-btn awe-btn-13" value="3">
+                                                                    Make payment
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </article>
+                                        </section>
+                                        <!--//facilities-->
+
+
+                                    </div>
+                                    <!-- END / AMENITIES -->
+                                    <!-- PACKAGE -->
+                                    <div class="tab-pane fade" id="package">
+
+                                        <!--location-->
+                                        <section id="location" class="tab-content">
+                                            <article>
+                                                <!--map-->
+                                                <h1>Easy Paisa</h1>
+                                                <div class="text-wrap">
+                                                    <ul>
+                                                        <li>Visit any Easypaisa shop with original CNIC and photocopy, </li>
+                                                        <li>
+                                                            Ask the retailer to send the money to Tourplanner.pk’s Easypaisa mobile account#
+                                                            0345 123455677 4 Easypaisa retailer will enter the following: • Your CNIC • Amount
+                                                            • Your mobile number • Reference e.g Oder ID
+                                                        </li>
+                                                        <li>You will pay required amount + Fee to the retailer. </li>
+                                                        <li>
+                                                            You will get an SMS confirmation which will contain your unique transaction ID.
+                                                            (Do not share that ID with the retailer)
+                                                        </li>
+                                                        <li>
+                                                            Login to your Tourplanner.pk account and submit this transaction ID into your
+                                                            account. Tourplanner.pk will get back to you with an email
+                                                        </li>
+                                                    </ul>
+                                                    <table class="table table-striped" cellpadding="4" style="width: 100%;">
+
+                                                        <tr>
+
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 10%; padding-top: 5px;">
+                                                                <b>Account#</b>
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 5px;">
+                                                                0345 12345563 4
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 10%; padding-top: 5px;">
+                                                                <b>Transaction#</b>
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 5px;">
+                                                                <input class="form-control" id="easypaisaref" name="easypaisaref" type="text" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right" valign="top" style="width: 10%; padding-top: 0px;"></td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 20px;">
+                                                                <button name="button" class="awe-btn awe-btn-13" value="4">
+                                                                    Make payment
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <!--//map-->
+                                            </article>
+                                        </section>
+                                        <!--//location-->
+
+                                    </div>
+                                    <!-- END / PACKAGE -->
+                                    <!-- RATES -->
+                                    <div class="tab-pane fade" id="rates">
+
+                                        <!--reviews-->
+                                        <section id="reviews" class="tab-content">
+                                            <article>
+                                                <h1>Timepey</h1>
+                                                <div class="text-wrap">
+                                                    <table class="table table-striped" cellpadding="4" style="width: 100%;">
+
+                                                        <tr>
+                                                            <td align="left" valign="top" colspan="2">
+                                                                Visit nearest Timepey center, Zong franchise, customer center or Askari bank branch.
+                                                                Provide Timepey Account number and cash at counter You will get an sms from Zong
+                                                                and an email from Tourplanner.pk after confirmation Provide Timepey Account number
+                                                                and cash at counter You will get an sms from Zong and an email from Tourplanner.pk
+                                                                after confirmation
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 10%; padding-top: 5px;">
+                                                                <b>Account#</b>
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 5px;">
+                                                                0300 123456
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="top" style="width: 10%; padding-top: 5px;">
+                                                                <b>Transaction#</b>
+                                                            </td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 5px;">
+                                                                <input class="form-control" id="timepeyref" name="timepeyref" type="text" />
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="right" valign="top" style="width: 10%; padding-top: 0px;"></td>
+                                                            <td align="left" valign="top" style="width: 90%; padding-top: 20px;">
+                                                                <button name="button" class="button" value="5">
+                                                                    Make payment
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </article>
+                                        </section>
+                                        <!--//reviews-->
+
+
+                                    </div>
+                                    <!-- END / RATES -->
+                                    @*<!-- CALENDAR -->
+                                        <div class="tab-pane fade" id="calendar">
+
+                                            <div class="room-detail_calendar-wrap row">
+
+                                                <div class="col-sm-6">
+                                                    <!-- CALENDAR ITEM -->
+                                                    <div class="calendar_custom">
+
+                                                        <div class="calendar_title">
+                                                            <span class="calendar_month">JUNE</span>
+                                                            <span class="calendar_year">2015</span>
+
+                                                            <a href="#" class="calendar_prev calendar_corner"><i class="fa fa-chevron-left"></i></a>
+                                                        </div>
+
+                                                        <table class="calendar_tabel">
+
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Su</th>
+                                                                    <th>Mo</th>
+                                                                    <th>Tu</th>
+                                                                    <th>We</th>
+                                                                    <th>Th</th>
+                                                                    <th>Fr</th>
+                                                                    <th>Sa</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tr>
+                                                                <td></td>
+                                                                <td class="apb-calendar_current-date">
+                                                                    <a href="#"><small>1</small></a>
+                                                                </td>
+                                                                <td><a href="#"><small>2</small></a></td>
+                                                                <td><a href="#"><small>3</small></a></td>
+                                                                <td><a href="#"><small>4</small></a></td>
+                                                                <td><a href="#"><small>5</small></a></td>
+                                                                <td><a href="#"><small>6</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>7</small></a></td>
+                                                                <td><a href="#"><small>8</small></a></td>
+                                                                <td><a href="#"><small>9</small></a></td>
+                                                                <td><a href="#"><small>10</small></a></td>
+                                                                <td class="apb-calendar_current-select"><a href="#"><small>11</small></a></td>
+                                                                <td class="apb-calendar_current-select"><a href="#"><small>12</small></a></td>
+                                                                <td><a href="#"><small>13</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>14</small></a></td>
+                                                                <td><a href="#"><small>15</small></a></td>
+                                                                <td class="not-available"><a href="#"><small>16</small></a></td>
+                                                                <td class="not-available"><a href="#"><small>17</small></a></td>
+                                                                <td><a href="#"><small>18</small></a></td>
+                                                                <td><a href="#"><small>19</small></a></td>
+                                                                <td><a href="#"><small>20</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>21</small></a></td>
+                                                                <td><a href="#"><small>22</small></a></td>
+                                                                <td><a href="#"><small>23</small></a></td>
+                                                                <td><a href="#"><small>24</small></a></td>
+                                                                <td><a href="#"><small>25</small></a></td>
+                                                                <td><a href="#"><small>26</small></a></td>
+                                                                <td><a href="#"><small>27</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>28</small></a></td>
+                                                                <td><a href="#"><small>29</small></a></td>
+                                                                <td><a href="#"><small>30</small></a></td>
+                                                                <td><a href="#"><small>31</small></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                        </table>
+
+                                                    </div>
+                                                    <!-- END CALENDAR ITEM -->
+                                                </div>
+
+                                                <div class="col-sm-6">
+
+                                                    <!-- CALENDAR ITEM -->
+                                                    <div class="calendar_custom">
+
+                                                        <div class="calendar_title">
+                                                            <span class="calendar_month">JUNE</span>
+                                                            <span class="calendar_year">2015</span>
+
+                                                            <a href="#" class="calendar_next calendar_corner"><i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+
+                                                        <table class="calendar_tabel">
+
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Su</th>
+                                                                    <th>Mo</th>
+                                                                    <th>Tu</th>
+                                                                    <th>We</th>
+                                                                    <th>Th</th>
+                                                                    <th>Fr</th>
+                                                                    <th>Sa</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tr>
+                                                                <td></td>
+                                                                <td class="apb-calendar_current-date">
+                                                                    <a href="#"><small>1</small></a>
+                                                                </td>
+                                                                <td><a href="#"><small>2</small></a></td>
+                                                                <td><a href="#"><small>3</small></a></td>
+                                                                <td><a href="#"><small>4</small></a></td>
+                                                                <td><a href="#"><small>5</small></a></td>
+                                                                <td><a href="#"><small>6</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>7</small></a></td>
+                                                                <td><a href="#"><small>8</small></a></td>
+                                                                <td><a href="#"><small>9</small></a></td>
+                                                                <td><a href="#"><small>10</small></a></td>
+                                                                <td class="apb-calendar_current-select"><a href="#"><small>11</small></a></td>
+                                                                <td class="apb-calendar_current-select"><a href="#"><small>12</small></a></td>
+                                                                <td><a href="#"><small>13</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>14</small></a></td>
+                                                                <td><a href="#"><small>15</small></a></td>
+                                                                <td class="not-available"><a href="#"><small>16</small></a></td>
+                                                                <td class="not-available"><a href="#"><small>17</small></a></td>
+                                                                <td><a href="#"><small>18</small></a></td>
+                                                                <td><a href="#"><small>19</small></a></td>
+                                                                <td><a href="#"><small>20</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>21</small></a></td>
+                                                                <td><a href="#"><small>22</small></a></td>
+                                                                <td><a href="#"><small>23</small></a></td>
+                                                                <td><a href="#"><small>24</small></a></td>
+                                                                <td><a href="#"><small>25</small></a></td>
+                                                                <td><a href="#"><small>26</small></a></td>
+                                                                <td><a href="#"><small>27</small></a></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><a href="#"><small>28</small></a></td>
+                                                                <td><a href="#"><small>29</small></a></td>
+                                                                <td><a href="#"><small>30</small></a></td>
+                                                                <td><a href="#"><small>31</small></a></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                        </table>
+
+                                                    </div>
+                                                    <!-- END CALENDAR ITEM -->
+                                                </div>
+
+                                                <div class="calendar_status text-center col-sm-12">
+                                                    <span>Available</span>
+                                                    <span class="not-available">Not Available</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- END / CALENDAR -->*@
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- SIDEBAR -->
+                <div class="col-md-4 col-lg-3">
+
+                    <div class="reservation-sidebar">
+
+                        <!-- RESERVATION DATE -->
+                        <div class="reservation-date bg-gray">
+
+                            <!-- HEADING -->
+                            <h2 class="reservation-heading">Dates</h2>
+                            <!-- END / HEADING -->
+
+                            <ul>
+                                <li>
+                                    <span>Check-In</span>
+                                    <span>Thu 06/03/2015</span>
+                                </li>
+                                <li>
+                                    <span>Check-Out</span>
+                                    <span>Sat 06/06/2015</span>
+                                </li>
+                                <li>
+                                    <span>Total Guests</span>
+                                    <span>4 Adults 1 Children</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- END / RESERVATION DATE -->
+                        <!-- ROOM SELECT -->
+                        <div class="reservation-room-selected bg-gray">
+
+                            <!-- HEADING -->
+                            <h2 class="reservation-heading">Selected Facility</h2>
+                            <!-- END / HEADING -->
+                            <!-- ITEM -->
+                            <div class="reservation-room-seleted_item">
+
+                                <h6>ROOM 1</h6> <span class="reservation-option">2 Adult, 1 Child</span>
+
+                                
+
+                                <div class="reservation-room-seleted_package">
+                                    <h6>Space Price</h6>
+                                    <ul>
+                                        <li>
+                                            <span>3 June 2015</span>
+                                            <span>$250.00</span>
+                                        </li>
+                                        <li>
+                                            <span>6 June 2015</span>
+                                            <span>$320.00</span>
+                                        </li>
+                                    </ul>
+
+                                    <ul>
+                                        <li>
+                                            <span>Service</span>
+                                            <span>Free</span>
+                                        </li>
+                                        <li>
+                                            <span>Tax</span>
+                                            <span>$320.00</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                
+
+                            </div>
+                            <!-- END / ITEM -->
+                            <!-- ITEM -->
+                            
+                            <!-- END / ITEM -->
+                            <!-- TOTAL -->
+                            <div class="reservation-room-seleted_total bg-blue">
+                                <label>TOTAL</label>
+                                <span class="reservation-total">$470.00</span>
+                            </div>
+                            <!-- END / TOTAL -->
+
+                        </div>
+                        <!-- END / ROOM SELECT -->
+
+                    </div>
+
+                </div>
+                <!-- END / SIDEBAR -->
+            </div>
+        </div>
+    </div>
+</section>
